@@ -7,12 +7,24 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <h1></h1>
-        <section class="contenido">
-            <textarea name="campoParaEscribir" id="campoParaEscribir" placeholder="Ingresa el texto aquí"></textarea>
+    <main class="contenido">
+        <h1 class="contenido_titulo">Encriptador de texto</h1>
+        <section class="contenido_encriptador">
+            <div class="contenido_encriptador_campos">
+                <textarea class="contenido__encriptador_campos_TextArea" name="campoParaEscribir" id="campoParaEscribir" placeholder="Ingresa el texto aquí"></textarea>
+                <p class="contenido_encriptador_campos_advertencia">Solo letras minusculas y sin acentos</p>
+                <div class="contenido_encriptador_campos_botones">
+                    <input class="contenido_encriptador_campos_botones_boton" type="button" value="Encriptar">
+                    <input class="contenido_encriptador_campos_botones_boton" type="button" value="Desencriptar">
+                </div>
+            </div>
+            <div class="contenido_encriptador_resultado">
+                <img class="contenido_encriptador_resultado_imagen" src="assets/Muñeco.png" alt="imagen de un muñeco con lupa">
+                <p class="contenido_encriptador_resultado_texto">ningun mensaje fue encontrado</p>
+                <p class="contenido_encriptador_resultado_indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>Desarrollado por Jonathan Quintero</footer>
 </body>
 </html>
