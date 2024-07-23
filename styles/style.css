@@ -151,7 +151,6 @@ footer{
 
     .contenido_encriptador{
         flex-direction: column;
-        align-items: left;
     }
 
     .contenido_encriptador_campos_titulo{
@@ -184,7 +183,7 @@ footer{
     }
 
     .contenido_encriptador_resultado{
-       width:90%;
+       width:98%;
        margin-top: 64px;;
        justify-content: center;
        height: 150px;
