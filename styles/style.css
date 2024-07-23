@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-principal: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terceario: #495057;
+    --color-cuarteario: #fafafa;
+    --color-quintero: #D8DFE8;
+    --color-sextenio: #343A40;
+
+    --fuente-principal: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-principal);
+    box-sizing: border-box;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+}
+
+.contenido_encriptador{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenido_encriptador_campos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido_encriptador_campos_titulo{
+    font-size: 4rem;
+    font-family: var(--fuente-principal);
+    color: var(--color-secundario);
+    margin: 0px;
+}
+
+
+
+.contenido__encriptador_campos_TextArea{
+    background-color: var(--color-principal);
+    border: none;
+    width: 100%;
+    height: 65%;
+    font-family: var(--fuente-principal);
+    color: var(--color-secundario);
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin: 10% auto 1% auto;
+}
+
+.contenido__encriptador_campos_TextArea::placeholder{
+    color: var(--color-secundario);
+    font-size: 2rem;
+}
+
+.contenido__encriptador_campos_TextArea:focus{
+    outline: none;
+}
+
+.contenido__encriptador_campos_TextArea:focus::placeholder{
+    color: var(--color-principal);
+}
+
+.contenido_encriptador_campos_advertencia{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    color: var(--color-terceario);
+}
+
+.contenido_encriptador_campos_botones{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: left;
+    margin-top: 2%;
+}
+.contenido_encriptador_campos_botones_boton{
+    padding: 1.5rem 10rem;
+    font-size: 1rem;
+    border-radius: 24px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.contenido_encriptador_campos_botones_boton:disabled{
+    background-color: var(--color-quintero);
+    color: var(--color-secundario)
+}
+
+.contenido_encriptador_resultado{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 6%;
+    height: 48rem;
+    width: 24%;
+    font-family: var(--fuente-principal);
+    padding: 1%;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2%;
+}
+
+.contenido_encriptador_resultado_contenido{
+display: flex;
+flex-direction: column;
+margin-top: 25%;
+justify-content: center;
+}
+
+.contenido_encriptador_resultado_contenido_texto{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-sextenio);
+}
+
+.contenido_encriptador_resultado_contenido_incidacion{
+    color: var(--color-terceario);
+}
+
+.contenido_encriptador_resultado_boton{
+    padding: 1.5rem 20%;
+    font-size: 1rem;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    justify-content: center;
+    display: none;
+}
+
+footer{
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+    color: var(--color-principal);
+    text-align: center;
+    font-family: var(--fuente-principal);
+}
+
+@media (max-width: 1252px){
+
+    .contenido_encriptador{
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .contenido_encriptador_campos_titulo{
+        width: auto;
+        font-size: 3rem;
+     }
+ 
+    
+    .contenido__encriptador_campos_TextArea{
+        height: 600px;
+        width: auto;
+        margin: 2% 0;
+    }
+
+    .contenido__encriptador_campos_TextArea::placeholder{
+        font-size: 3rem;
+    }
+
+
+   
+    .contenido_encriptador_campos_botones{
+        width: auto;
+        justify-content: center;
+     }
+
+    .contenido_encriptador_campos_botones_boton{
+       width: 40%;
+       padding: 2% 4%;
+       
+    }
+
+    .contenido_encriptador_resultado{
+       width:90%;
+       margin-top: 64px;;
+       justify-content: center;
+       height: 150px;
+       margin-bottom: 24px;
+    }
+    .contenido_encriptador_resultado_contenido{
+        margin: 0%;
+        }
+
+    .contenido_encriptador_resultado_contenido_imagen{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 553px){
+
+    .contenido_encriptador_campos_titulo{
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+    .contenido__encriptador_campos_TextArea{
+        margin: 20px;
+        height: 270px;
+        font-size: 1.5rem;
+    }
+
+    .contenido__encriptador_campos_TextArea::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .contenido_encriptador_campos_botones{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 24px;
+        
+    }
+
+    .contenido_encriptador_campos_botones_boton{
+        width: 90%;
+        padding: 24px;
+    }
+}
