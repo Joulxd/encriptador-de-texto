@@ -11,9 +11,11 @@ function botonEncriptar(){
         volverInvisibleElementoHTML('advertenciaMinusculas');
         desplegarEncriptacion(encriptar(textoOriginal));
     }else{
-        asignarValorElementoHTML('areaDeTexto','');
         volverVisibleElementoHTML('advertenciaMinusculas');
         insertarTextoElementoHTML('textoResultado','');
+        volverVisibleElementoHTML('imagenResultado');
+        volverVisibleElementoHTML('tituloNingunMensaje');
+        insertarTextoElementoHTML('tituloNingunMensaje','Mensaje no valido');
     }
     
 }
