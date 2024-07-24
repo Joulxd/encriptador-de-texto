@@ -86,6 +86,7 @@ body{
     justify-content: left;
     margin-top: 2%;
 }
+
 .contenido_encriptador_campos_botones_boton{
     padding: 1.5rem 10rem;
     font-size: 1rem;
@@ -94,10 +95,17 @@ body{
     color: var(--color-principal);
 }
 
-.contenido_encriptador_campos_botones_boton:disabled{
-    background-color: var(--color-quintero);
-    color: var(--color-secundario)
+.contenido_encriptador_campos_botones_boton:hover{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
 }
+.contenido_encriptador_campos_botones_boton:active{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+
 
 .contenido_encriptador_resultado{
     display: flex;
@@ -116,14 +124,17 @@ body{
 .contenido_encriptador_resultado_contenido{
 display: flex;
 flex-direction: column;
-margin-top: 25%;
 justify-content: center;
 }
 
 #textoResultado{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: left;
     color: var(--color-terceario);
+}
+
+.contenido_encriptador_resultado_contenido_imagen{
+    margin-top: 25%;
 }
 
 .contenido_encriptador_resultado_contenido_texto{
@@ -146,12 +157,18 @@ justify-content: center;
     justify-content: center;
     visibility: hidden;
 }
+.contenido_encriptador_resultado_boton:active{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
 
 footer{
+    display: flex;
+    justify-content: space-between;
     background-color: var(--color-secundario);
     padding: 1.5rem;
     color: var(--color-principal);
-    text-align: center;
+    text-align: left;
     font-family: var(--fuente-principal);
 }
 
@@ -187,7 +204,6 @@ footer{
     .contenido_encriptador_campos_botones_boton{
        width: 40%;
        padding: 2% 4%;
-       
     }
 
     .contenido_encriptador_resultado{

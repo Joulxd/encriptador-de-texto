@@ -16,8 +16,8 @@
                 <textarea id="areaDeTexto" class="contenido__encriptador_campos_TextArea" name="campoParaEscribir" id="campoParaEscribir" placeholder="Ingresa el texto aquí"></textarea>
                 <p id="advertenciaMinusculas" class="contenido_encriptador_campos_advertencia"><img src="assets/signo de exclamacion.png">Solo letras minusculas y sin acentos</p>
                 <div class="contenido_encriptador_campos_botones">
-                    <input id="botonEncriptar" onclick="botonCodificar()" class="contenido_encriptador_campos_botones_boton" type="button" value="Encriptar">
-                    <input id="botonDesencriptar" class="contenido_encriptador_campos_botones_boton" type="button" value="Desencriptar" disabled>
+                    <input id="botonEncriptar" onclick="botonEncriptar()" class="contenido_encriptador_campos_botones_boton" type="button" value="Encriptar">
+                    <input id="botonDesencriptar" onclick="botonDesencriptar()" class="contenido_encriptador_campos_botones_boton" type="button" value="Desencriptar">
                 </div>
             </div>
             <div class="contenido_encriptador_resultado">
@@ -27,10 +27,12 @@
                     <p id="tituloNingunMensaje" class="contenido_encriptador_resultado_contenido_texto">ningun mensaje fue encontrado</p>
                     <p id="ingresaTexto" class="contenido_encriptador_resultado_contenido_indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
-                <button id="botonCopiar" class="contenido_encriptador_resultado_boton">Copiar</button>
+                <button id="botonCopiar" onclick="copiarTexto()" class="contenido_encriptador_resultado_boton">Copiar</button>
             </div>
         </section>
     </main>
-    <footer>Desarrollado por Jonathan Ulises Quintero Delgado, 2024</footer>
+    <footer>
+        <p>2024, Jonathan Ulises Quintero Delgado</p>
+    </footer>
 </body>
 </html>
