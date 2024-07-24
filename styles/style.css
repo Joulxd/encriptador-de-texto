@@ -112,7 +112,7 @@ body{
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 6%;
-    height: 48rem;
+    height: fit-content;;
     width: 24%;
     font-family: var(--fuente-principal);
     padding: 1%;
@@ -131,6 +131,7 @@ justify-content: center;
     font-size: 1.25rem;
     text-align: left;
     color: var(--color-terceario);
+    margin: 1%;
 }
 
 .contenido_encriptador_resultado_contenido_imagen{
@@ -210,7 +211,6 @@ footer{
        width:98%;
        margin-top: 64px;;
        justify-content: center;
-       height: 150px;
        margin-bottom: 24px;
     }
     .contenido_encriptador_resultado_contenido{

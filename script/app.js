@@ -11,11 +11,7 @@ function botonEncriptar(){
         volverInvisibleElementoHTML('advertenciaMinusculas');
         desplegarEncriptacion(encriptar(textoOriginal));
     }else{
-        volverVisibleElementoHTML('advertenciaMinusculas');
-        insertarTextoElementoHTML('textoResultado','');
-        volverVisibleElementoHTML('imagenResultado');
-        volverVisibleElementoHTML('tituloNingunMensaje');
-        insertarTextoElementoHTML('tituloNingunMensaje','Mensaje no valido');
+       mensajeIncorrecto();
     }
     
 }
@@ -26,8 +22,7 @@ function botonDesencriptar(){
         volverInvisibleElementoHTML('advertenciaMinusculas');
         desplegarEncriptacion(desencriptar(textoEncriptado));
     }else{
-        asignarValorElementoHTML('areaDeTexto','');
-        volverVisibleElementoHTML('advertenciaMinusculas');
+        mensajeIncorrecto();
     }
 }
 
@@ -131,4 +126,15 @@ function desplegarEncriptacion(textoCodificado){
     volverInvisibleElementoHTML('ingresaTexto');
     volverVisibleElementoHTML('botonCopiar');
     insertarTextoElementoHTML('textoResultado',textoCodificado);
+}
+
+
+function mensajeIncorrecto(){
+    volverVisibleElementoHTML('advertenciaMinusculas');
+    insertarTextoElementoHTML('textoResultado','');
+    volverVisibleElementoHTML('imagenResultado');
+    volverVisibleElementoHTML('tituloNingunMensaje');
+    volverVisibleElementoHTML('ingresaTexto');
+    volverInvisibleElementoHTML('botonCopiar');
+    insertarTextoElementoHTML('tituloNingunMensaje','El mensaje ingresado no es válido');
 }
