@@ -7,7 +7,6 @@
     --color-cuarteario: #fafafa;
     --color-quintero: #D8DFE8;
     --color-sextenio: #343A40;
-    --color-advertencia: #
 
     --fuente-principal: "Inter", sans-serif;
 }
@@ -17,20 +16,29 @@
     margin: 0;
 }
 
-body{
+html, body {
+    height: 100%;
     background-color: var(--color-principal);
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
+
+body {
+    min-height: 100vh;
+}
+
 .contenido{
     display: flex;
     flex-direction: column;
     margin: 2% 5%;
+    flex:1;
 }
 
 .contenido_encriptador{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
 .contenido_encriptador_campos{
@@ -112,7 +120,6 @@ body{
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 6%;
-    height: fit-content;;
     width: 24%;
     font-family: var(--fuente-principal);
     padding: 1%;
@@ -167,7 +174,7 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--color-secundario);
-    padding: 1.5rem;
+    padding: 2.25%;
     color: var(--color-principal);
     text-align: left;
     font-family: var(--fuente-principal);
@@ -177,6 +184,7 @@ footer{
 
     .contenido_encriptador{
         flex-direction: column;
+        justify-content: start;
     }
 
     .contenido_encriptador_campos_titulo{
